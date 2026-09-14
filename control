@@ -1,0 +1,9 @@
+Package: com.34306.duobar
+Name: DuoBar
+Version: 1.1.5
+Architecture: iphoneos-arm
+Description: Combined iPhone Duo-style status bar indicator (Wi-Fi + Cellular + Battery in one circle)
+Maintainer: Little 34306
+Author: 34306
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader

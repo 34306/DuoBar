@@ -1,0 +1,9 @@
+{
+    entry = {
+        bundle = DuoBarPrefs;
+        cell = PSLinkCell;
+        detail = DuoBarPrefsListController;
+        isController = 1;
+        label = DuoBar;
+    };
+}

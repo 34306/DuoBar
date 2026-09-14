@@ -1,0 +1,43 @@
+{
+    items = (
+        { cell = PSGroupCell; label = "DuoBar";
+          footerText = "iPhone Duo-style status indicator: Wi-Fi, cellular and battery combined into one circle."; },
+        { cell = PSSwitchCell; label = "Enabled"; key = Enabled; default = 1;
+          defaults = "com.34306.duobar"; PostNotification = "com.34306.duobar/prefsChanged"; },
+        { cell = PSSwitchCell; label = "Battery percentage"; key = ShowPercent; default = 1;
+          defaults = "com.34306.duobar"; PostNotification = "com.34306.duobar/prefsChanged"; },
+
+        { cell = PSGroupCell; label = "Color"; },
+        { cell = PSSegmentCell; key = ColorMode; default = 0;
+          defaults = "com.34306.duobar"; PostNotification = "com.34306.duobar/prefsChanged";
+          validTitles = ( "Adaptive", "White", "Black", "Custom" );
+          validValues = ( 0, 1, 2, 3 ); },
+        { cell = PSEditTextCell; label = "Custom hex"; key = CustomColor; default = "#FFFFFF";
+          defaults = "com.34306.duobar"; PostNotification = "com.34306.duobar/prefsChanged";
+          autoCapitalizationType = 0; autoCorrectionType = 1; },
+
+        { cell = PSGroupCell; label = "Scale"; footerText = "Size of the icon. Updates live."; },
+        { cell = PSSliderCell; cellClass = DuoSliderCell; key = Scale; default = 1.0; min = 0.5; max = 1.8;
+          showValue = 1; defaults = "com.34306.duobar"; PostNotification = "com.34306.duobar/prefsChanged"; },
+
+        { cell = PSGroupCell; label = "Custom Position";
+          footerText = "Turn on to place the icon yourself. When off, DuoBar centres it on the stock cluster automatically."; },
+        { cell = PSSwitchCell; label = "Custom position"; key = CustomPosition; default = 0;
+          defaults = "com.34306.duobar"; PostNotification = "com.34306.duobar/prefsChanged"; },
+
+        { cell = PSGroupCell; label = "Horizontal";
+          footerText = "Negative = left, positive = right. 0 is the default spot."; },
+        { cell = PSSliderCell; cellClass = DuoSliderCell; key = OffsetX; default = 0; min = -60; max = 60;
+          showValue = 1; defaults = "com.34306.duobar"; PostNotification = "com.34306.duobar/prefsChanged"; },
+
+        { cell = PSGroupCell; label = "Vertical";
+          footerText = "Negative = down, positive = up. Drag to move the icon live."; },
+        { cell = PSSliderCell; cellClass = DuoSliderCell; key = OffsetY; default = 0; min = -30; max = 30;
+          showValue = 1; defaults = "com.34306.duobar"; PostNotification = "com.34306.duobar/prefsChanged"; },
+
+        { cell = PSGroupCell; footerText = "com.34306.duobar"; },
+        { cell = PSButtonCell; label = "Reset to defaults"; action = "resetPrefs"; },
+        { cell = PSButtonCell; label = "Respring"; action = "respring"; isDestructive = 1; },
+    );
+    title = DuoBar;
+}

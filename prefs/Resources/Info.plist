@@ -1,0 +1,10 @@
+{
+    CFBundleDevelopmentRegion = en;
+    CFBundleExecutable = DuoBarPrefs;
+    CFBundleIdentifier = "com.34306.duobarprefs";
+    CFBundleInfoDictionaryVersion = "6.0";
+    CFBundleName = DuoBarPrefs;
+    CFBundlePackageType = BNDL;
+    CFBundleVersion = "1.0";
+    NSPrincipalClass = DuoBarPrefsListController;
+}
